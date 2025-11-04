@@ -1,11 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Validación de Números</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    
+  <main class="card">
+    <h1>Ingresa 3 números</h1>
+
+    <form id="formNumeros" novalidate>
+      <div class="inputs">
+        <label for="n1">Número 1</label>
+        <input id="n1" name="n1" type="number" placeholder="Ej. 12" inputmode="decimal"/>
+
+        <label for="n2">Número 2</label>
+        <input id="n2" name="n2" type="number" placeholder="Ej. 7" inputmode="decimal"/>
+
+        <label for="n3">Número 3</label>
+        <input id="n3" name="n3" type="number" placeholder="Ej. 20" inputmode="decimal"/>
+      </div>
+
+      <button id="btnValidar" type="button">Validar</button>
+    </form>
+
+    <p id="resultado" class="resultado" aria-live="polite"></p>
+  </main>
+
+  <script src="main.js"></script>
 </body>
 </html>
